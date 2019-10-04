@@ -10,7 +10,12 @@ Software Defined Network(SDN) Controller인 ONOS를 이용해서 전체 네트�
 * 또한 SDN Controller에서 제공하는 UI를 통해서 사용자는 전체 네트워크 토폴로지를 확인할 수 있습니다.
 * UI에 있는 이름을 통해 다른 사용자의 컨테이너 또한 확인이 가능합니다.
 
-### Excute Project(자세한 설명 필요)
+### Excute Project
+1. onos controller 설치
+2. container Manager Server 설치
+3. 각 Host 설치
+4. Manager와 Host 사이에 VXLAN 연결
+
 ###### onos controller
 1. onos_install.sh 실행
 2. onos 폴더로 들어가서 start-onos.sh 실행
