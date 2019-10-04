@@ -46,7 +46,7 @@ ex) ./vxlan.sh vxlan0 192.168.172.111
 4. 매니저가 중앙에서 관리
 
 # Setting Initialize
-1. sudo 권한으로 Initialize.sh 실행
+sudo 권한으로 Initialize.sh 실행
 
 자세한 사항은 utils 파일 안에 설치 및 실행 동영상을 확인하거나 [manual.txt](../manual.txt)를 확인하시기 바랍니다.
 
