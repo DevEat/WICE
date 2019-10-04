@@ -1,0 +1,31 @@
+# onos controller
+1. onos_install.sh 실행
+2. onos 폴더로 들어가서 start-onos.sh 실행
+3. app activate org.onosproject.fwd
+   app activate org.onosproject.openflow
+4. [controller_ip]:8181/onos/ui 웹 페이지 접속
+
+# Container Manager Server
+1. sudo 권한으로 docker-install.sh 실행
+2. sudo ovs-vsctl show 확인 ( controller에 is_connected: true 표시가 나타나는 경우 성공 )
+
+# Host
+1. sudo 권한으로 docker-install.sh 실행
+2. sudo 권한으로 make-ovs 실행
+3. sudo ovs-vsctl show ( 매니저와 동일 )
+4. sudo docker ps ( 컨테이너 목록 확인 )
+
+# VXLAN 연결 ( 호스트-호스트간에 통신 연결 )
+1. vxlan.sh 실행 ( 실행 방법은 ./vxlan.sh [vxlan별칭] [상대방 호스트 ip])
+ex) ./vxlan.sh vxlan0 192.168.172.111
+2. sudo ovs-vsctl show ( vxlan port 생성이 되었는지 확인 )
+
+# VXLAN 주의사항
+# 매니저=102 / 호스트=111/112 인 경우
+1. 매니저와 호스트들을 연결
+2. 102-111 연결
+3. 102-112 연결
+4. 매니저가 중앙에서 관리
+
+# Setting Initialize
+1. sudo 권한으로 Initialize.sh 실행

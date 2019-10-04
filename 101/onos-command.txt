@@ -1,0 +1,6 @@
+# onos GUI homepage URL
+[controller_ip]:8181/onos/ui
+
+# onos command
+onos > app activate org.onosproject.fwd
+onos > app activate org.onosproject.openflow
